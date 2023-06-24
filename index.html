@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.c    om/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Staatliches&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="top">
+            <h2>Message Me</h2>
+        </div>
+        <!-- <div id="login">
+            <p>Already Registered?<a href="/index.html">Login in here.</a></p>
+        </div> -->
+    </header>
+    <main>
+        <form id="CreateAccount" action="/thanks.html" onsubmit="moveToNextPage(); return false;" method="get">
+            <div id="name" class="inputs">
+                <label for="firstname">Message Heading</label>
+                <input type="text" id="firstname" name="firstname" value="" placeholder="Enter message Heading">
+            </div>
+            <div id="mail" class="inputs">
+                <label for="email">Mail</label>
+                <textarea name="email" placeholder="Please Enter Your Message" id="email" cols="30" rows="10"></textarea>
+            </div>
+
+            <div id="sub" class="inputs">
+                <!-- <label for="submit">Phone Number</label> -->
+                <button type="submit" id="submit" name="submit">Sign up</button>
+            </div>
+        </form>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js">
+    </script>
+    <script src="script.js"></script>
+    <script>
+        function moveToNextPage() {
+            window.location.href = "/thanks.html";
+        }
+    </script>
+</body>
+
+</html>
